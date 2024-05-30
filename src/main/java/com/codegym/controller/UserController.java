@@ -21,6 +21,11 @@ public class UserController {
         return new ModelAndView("/user");
     }
 
+    @GetMapping("/dangnhap")
+    public ModelAndView dangnhap() {
+        return new ModelAndView("/dangnhap");
+    }
+
     @GetMapping("/admin")
     public ModelAndView admin() {
         SecurityContext context = SecurityContextHolder.getContext();
